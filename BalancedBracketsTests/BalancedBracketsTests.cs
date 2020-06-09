@@ -6,7 +6,6 @@ namespace BalancedBracketsTests
     [TestClass]
     public class BalancedBracketsTests
     {
-        // TODO: Add tests to this file.
         //Test 1
         [TestMethod]
         public void OnlyBracketsReturnsTrue()

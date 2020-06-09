@@ -21,7 +21,7 @@ namespace BalancedBracketsNS
          *   "[LaunchCode", "Launch]Code[", "[", "]["
          *
          * parameter str - to be validated
-         * returns true if balanced, false otherwise
+         * returns true if balanced false otherwise
         */
         public static bool HasBalancedBrackets(String str)
         {
