@@ -35,7 +35,7 @@ namespace BalancedBracketsNS
                 }
                 else if (ch == ']')
                 {
-                    if(openBrackets == 0)
+                    if(openBrackets == 0) // or if(closedBrackets >= openBrackets)
                     {
                         return false;
                     }
