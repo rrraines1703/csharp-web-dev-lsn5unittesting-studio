@@ -25,19 +25,24 @@ namespace BalancedBracketsNS
         */
         public static bool HasBalancedBrackets(String str)
         {
-            int brackets = 0;
+            int openBrackets = 0;
+            int closedBrackets = 0;
             foreach (char ch in str.ToCharArray())
             {
                 if (ch == '[')
                 {
-                    brackets++;
+                    openBrackets++;
                 }
                 else if (ch == ']')
                 {
-                    brackets--;
+                    if(openBrackets == 0)
+                    {
+                        return false;
+                    }
+                    closedBrackets++;
                 }
             }
-            return brackets == 0;
+            return openBrackets == closedBrackets;
         }
     }
 }
